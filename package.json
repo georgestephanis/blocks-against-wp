@@ -1,0 +1,10 @@
+{
+	"name": "blocks-against-wp",
+	"scripts": {
+		"build": "parcel build blocks/blocks-against-wp.jsx --out-dir blocks --public-url ."
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.10.1",
+		"sass": "^1.15.1"
+	}
+}

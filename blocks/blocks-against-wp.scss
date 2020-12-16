@@ -1,0 +1,54 @@
+
+.blocks-against-wp-card {
+	width: 200px;
+	height: 300px;
+	border-radius: 15px;
+	border-bottom: 0;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.35);
+	margin: 15px auto;
+	padding: 25px;
+	position: relative;
+	overflow: hidden;
+
+	p {
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-size: 25px;
+		font-weight: 700;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	// Colors: Default to a white card unless it's a black card.
+	background: #fff;
+	color: #000;
+
+	a {
+		color: #000;
+	}
+
+	&.card-black {
+		background: #000;
+		color: #fff;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	&:after {
+		display: block;
+		clear: both;
+		font-weight: 400;
+		font-size: 20px;
+		margin-top: 30px;
+		text-align: right;
+	}
+	&.pick-2:after {
+		content: 'pick ➋';
+	}
+	&.pick-3:after {
+		content: 'draw ➋ pick ➌';
+	}
+}
